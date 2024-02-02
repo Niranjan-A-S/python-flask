@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator - Aaron P Sony</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('weather') }}">Weather</a></li>
+                <li><a href="{{ url_for('bmi_calculator') }}">BMI Calculator</a></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <h1>BMI Calculator</h1>
+        </header>
+        <section>
+            <form action="{{ url_for('bmi_calculator') }}" method="post">
+                <label for="height">Height (m):</label>
+                <input type="number" name="height" required><br>
+                <label for="weight">Weight (kg):</label>
+                <input type="number" name="weight" required><br>
+                <button type="submit">Calculate BMI</button>
+            </form>
+            {% if bmi %}
+            <p>Your BMI is: {{ bmi }}</p>
+            {% endif %}
+        </section>
+        <footer>
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/aaronpsony" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/aaronpsony" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/aaronpsony" target="_blank">GitHub</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

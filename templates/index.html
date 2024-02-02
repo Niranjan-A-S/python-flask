@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aaron P Sony - Business Analyst</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- Google Analytics script goes here -->
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('weather') }}">Weather</a></li>
+                <li><a href="{{ url_for('bmi_calculator') }}">BMI Calculator</a></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <h1>Aaron P Sony</h1>
+            <p>Business Analyst</p>
+            <div class="bio">
+                <p>Welcome to my personal website! I'm passionate about analyzing data and deriving valuable insights to
+                    drive business decisions. With a background in business analytics, I strive to bring clarity to
+                    complex
+                    datasets.</p>
+            </div>
+        </header>
+        <section>
+            <h2>Documents</h2>
+            <ul class="document-links">
+                <li><a href="{{ url_for('static', filename='document1.pdf') }}" target="_blank">Document 1 (PDF)</a>
+                </li>
+                <li><a href="{{ url_for('static', filename='document2.docx') }}" target="_blank">Document 2 (Word)</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Images</h2>
+            <div class="image-gallery">
+                <a href="{{ url_for('static', filename='image1.avif') }}" target="_blank"><img
+                        src="{{ url_for('static', filename='image1.avif') }}" alt="Image 1"></a>
+                <a href="{{ url_for('static', filename='image2.avif') }}" target="_blank"><img
+                        src="{{ url_for('static', filename='image2.avif') }}" alt="Image 2"></a>
+                <a href="{{ url_for('static', filename='image3.avif') }}" target="_blank"><img
+                        src="{{ url_for('static', filename='image3.avif') }}" alt="Image 3"></a>
+                <a href="{{ url_for('static', filename='image4.avif') }}" target="_blank"><img
+                        src="{{ url_for('static', filename='image4.avif') }}" alt="Image 4"></a>
+                <a href="{{ url_for('static', filename='image5.avif') }}" target="_blank"><img
+                        src="{{ url_for('static', filename='image5.avif') }}" alt="Image 5"></a>
+            </div>
+        </section>
+        <footer>
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/aaronpsony" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/aaronpsony" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/aaronpsony" target="_blank">GitHub</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

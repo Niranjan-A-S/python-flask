@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Aaron P Sony</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- Google Analytics script goes here -->
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('weather') }}">Weather</a></li>
+                <li><a href="{{ url_for('bmi_calculator') }}">BMI Calculator</a></li>
+            </ul>
+        </nav>
+        <header class="hero">
+            <h1>Contact Me</h1>
+            <div class="contact-info">
+                <p>Feel free to reach out. I'm here to answer your questions and discuss opportunities.</p>
+                <p>Email: <a href="mailto:contact@aaronpsony.com">contact@aaronpsony.com</a></p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+        </header>
+        <footer>
+            <ul class="social-links">
+                <li><a href="https://linkedin.com/in/aaronpsony" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/aaronpsony" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/aaronpsony" target="_blank">GitHub</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
